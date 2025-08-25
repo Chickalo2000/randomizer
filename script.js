@@ -1,3 +1,4 @@
+
 let options = [];
 
 const canvas = document.getElementById("wheel");
@@ -31,6 +32,12 @@ spinButton.addEventListener("click", () => {
     options = [];
     drawWheel();
 });
+
+ctx.beginPath();
+ctx.arc(250, 250, 200, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFDDC1";
+ctx.fill();
+ctx.stroke();
 
  /*let optionInput = document.getElementById("optionInput");
 let optionsList = document.getElementById("optionsList");
